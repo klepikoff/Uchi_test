@@ -1,0 +1,90 @@
+body {
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 36px;
+}
+
+.equation {
+    padding-left: 400px;
+    display: flex;
+    height: 66px;
+}
+
+.equation div {
+    padding: 10px;
+}
+
+.sprite {
+    display: none;
+    left: 20px;
+    margin-top:100px;
+    z-index: 0;
+}
+
+canvas {
+    color: red;
+}
+
+.first__input {
+    position: absolute;
+    top: 110px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    width: 20px;
+    font-size: 20px;
+}
+
+.second__input {
+    position: absolute;
+    top: 120px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    width: 20px;
+    font-size: 20px;    
+}
+
+.first__input:disabled,
+.second__input:disabled {
+    border:none;
+    color: black;
+    background: none;
+    margin: 2px;
+    font-size: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin:0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+.equation__answer:disabled {
+    border:none;
+    color: black;
+    background: none;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+}
+
+.equation div:last-child{
+    padding: 8px;
+}
+
+.equation__answer {
+    border: 2px solid grey;
+    border-radius: 5px;
+    outline: none;
+    text-align: center;
+    width: 50px;
+    background: none;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
